@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.sdetl1.generic.RetryAnalyserListenerImplementation"/>
+    <listener class-name="com.sdetl1.generic.ListenerImplementation"/>
+  </listeners>
+  <test name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.vtiger.contact.CreateContacttTest">
+        <methods>
+          <include name="beforClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforSuite1Test"/>
+          <include name="createContacttTest"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.vtiger.contact.CreateContacttTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

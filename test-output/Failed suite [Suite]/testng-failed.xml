@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="firefox"/>
+  <test parallel="tests" name="firefox(failed)(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.vtiger.createCampaigns.CreateContactTest">
+        <methods>
+          <include name="beforClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.vtiger.createCampaigns.CreateContactTest -->
+      <class name="com.vtiger.documents.CreateDocumentsTest">
+        <methods>
+          <include name="beforClass"/>
+          <include name="beforeMethod"/>
+          <include name="documentsTest"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.vtiger.documents.CreateDocumentsTest -->
+      <class name="com.vtiger.Organization.CreateOrgWithTest">
+        <methods>
+          <include name="beforClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforSuite1Test"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.vtiger.Organization.CreateOrgWithTest -->
+      <class name="com.vtiger.createProduct.CreateProductTest">
+        <methods>
+          <include name="beforClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.vtiger.createProduct.CreateProductTest -->
+    </classes>
+  </test> <!-- firefox(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
