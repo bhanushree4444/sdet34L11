@@ -61,6 +61,7 @@ public class BaseClass {
 	     browser = PropertyFile.get_data_propertyfile("browser");
 //		 String USERNAME=System.getProperty("USERNAME");
 //		 System.out.println(USERNAME);
+	     //
 //		 String PASSWORD=System.getProperty("PASSWORD");
 //		 System.out.println(PASSWORD);
 //		 String browser=System.getProperty("BROWSER");
