@@ -24,9 +24,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  */
 public class BaseClass {
 	public String url;
-	public String USERNAME;
+	public String username;
 	public  long timeout;
-	public String PASSWORD;
+	public String password;
 	public String browser;
 	protected WebDriver driver=null;
 	public JavaGenericClass jutil;
@@ -54,17 +54,17 @@ public class BaseClass {
 	public void beforClass(/*String browser*/) throws IOException {
 		  jutil=new JavaGenericClass();
 		  randomNumber = jutil.getRandomNumber(1000);
-//		 url = PropertyFile.get_data_propertyfile("url");
-//		 username = PropertyFile.get_data_propertyfile("username");
+		 url = PropertyFile.get_data_propertyfile("url");
+		 username = PropertyFile.get_data_propertyfile("username");
 		 String timeout1 = PropertyFile.get_data_propertyfile("timeout");
-//		 password = PropertyFile.get_data_propertyfile("password");
-//	     browser = PropertyFile.get_data_propertyfile("browser");
-		 String USERNAME=System.getProperty("USERNAME");
-		 System.out.println(USERNAME);
-		 String PASSWORD=System.getProperty("PASSWORD");
-		 System.out.println(PASSWORD);
-		 String browser=System.getProperty("BROWSER");
-		 String url=System.getProperty("URL");
+		 password = PropertyFile.get_data_propertyfile("password");
+	     browser = PropertyFile.get_data_propertyfile("browser");
+//		 String USERNAME=System.getProperty("USERNAME");
+//		 System.out.println(USERNAME);
+//		 String PASSWORD=System.getProperty("PASSWORD");
+//		 System.out.println(PASSWORD);
+//		 String browser=System.getProperty("BROWSER");
+//		 String url=System.getProperty("URL");
 		 
 		 timeout= jutil.stringToLong(timeout1);
 		 
@@ -102,7 +102,7 @@ public class BaseClass {
 	 */
 	@BeforeMethod(groups = "baseclass")
 	public void beforeMethod() {
-		loginpage.loginAction(USERNAME,PASSWORD);
+		loginpage.loginAction(username,password);
 	}
 	/**
 	 * this method used to logout the application
