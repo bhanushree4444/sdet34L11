@@ -11,7 +11,6 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Parameters;
 
 import com.Vtiger.ObjectRepository.HomePage;
 import com.Vtiger.ObjectRepository.LoginPage;
@@ -36,7 +35,7 @@ public class BaseClass {
 	public WebdriverClass webdriverClass;
 	public static WebDriver staticdriver;
 	
-	/**
+	/** 
 	 * this method used to open excel and property file
 	 * @throws IOException
 	 */

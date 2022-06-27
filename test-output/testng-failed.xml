@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.practiceTest.PracticTestngAssertion">
+      <class name="com.practiceTest.GridPractice">
         <methods>
-          <include name="Test3Test"/>
-          <include name="Test1Test"/>
-          <include name="Test2Test"/>
+          <include name="GridPractice"/>
         </methods>
-      </class> <!-- com.practiceTest.PracticTestngAssertion -->
+      </class> <!-- com.practiceTest.GridPractice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
