@@ -1,6 +1,6 @@
 package com.PracticeJAVA;
 
-public class CharacterprintWithAdding {
+public class PrintNumSpecialCharacterprintWithAdding {
 
 	public static void main(String[] args) {
 		String s="@1b5o$m5(";
@@ -14,6 +14,7 @@ public class CharacterprintWithAdding {
 			}else
 				if(ch>='0'&&ch<='9') {
 					num=num+s.charAt(i);
+					
 				}else {
 					spl=spl+s.charAt(i);
 				}

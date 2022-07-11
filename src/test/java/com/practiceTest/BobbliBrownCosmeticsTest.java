@@ -1,4 +1,4 @@
-package com.PracticeJAVA;
+package com.practiceTest;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -18,7 +18,8 @@ public static void main(String[] args) throws InterruptedException {
 	driver.manage().window().maximize();
 	driver.get("http://bobbibrowncosmetics.com");
 	Thread.sleep(8000);
-	List<WebElement> allEle = driver.findElements(By.xpath("//div[@class='product-brief__abstract']/h4"));
+	//List<WebElement> allEle = driver.findElements(By.xpath("//div[@class='product-brief__abstract']/h4"));
+	List<WebElement> allEle = driver.findElements(By.xpath("//a"));
 	for(WebElement ele:allEle) {
 		System.out.println(ele.getSize());
 		System.out.println(ele.getText());

@@ -14,16 +14,13 @@ public class XLfetchMultiDataTest {
 	public static void main(String[] args) throws EncryptedDocumentException, IOException {
 		FileInputStream fis=new FileInputStream("./src/test/resources/data1.xlsx");
 	Workbook wb = WorkbookFactory.create(fis);
-	Sheet s = wb.getSheet("commondata");
-	for(int i=18;i<s.getLastRowNum();i++) 
+	Sheet s = wb.getSheet("mmt from");
+	for(int i=0;i<s.getLastRowNum();i++) 
 	{
 		for(int j=0;j<s.getRow(i).getLastCellNum();j++) 
 		{
 			System.out.println(s.getRow(i).getCell(j).getStringCellValue());
 		}
 	}
-	
-
 	}
-
 }

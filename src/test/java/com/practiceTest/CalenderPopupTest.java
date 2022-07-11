@@ -18,7 +18,7 @@ public class CalenderPopupTest {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("http://seleniumpractise.blogspot.com/2016/08/how-to-handle-calendar-in-selenium.html");
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		int reqDate = 25;
 		String reqYear = "2020";
 		String reqMonth = "January"; // MMMM = January, MM=01, MMM=Jan 

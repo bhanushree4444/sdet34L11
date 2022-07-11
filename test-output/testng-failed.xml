@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.practiceTest.GridPractice">
+      <class name="com.practiceTest.MakeMyTripFromTodataadded">
         <methods>
-          <include name="GridPractice"/>
+          <include name="method"/>
         </methods>
-      </class> <!-- com.practiceTest.GridPractice -->
+      </class> <!-- com.practiceTest.MakeMyTripFromTodataadded -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

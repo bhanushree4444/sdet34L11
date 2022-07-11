@@ -60,7 +60,7 @@ public class ListenerImplementation  implements ITestListener{
 		test.log(Status.FAIL, result.getThrowable());
 		
 		WebdriverClass webdriverClass=new WebdriverClass();
-		JavaGenericClass javaGenericClass=new JavaGenericClass();
+		//JavaGenericClass javaGenericClass=new JavaGenericClass();
 		try {
 			test.addScreenCaptureFromPath(webdriverClass.takeScreenShot(result.getMethod().getMethodName(), BaseClass.staticdriver));
 		} catch (IOException e) {
