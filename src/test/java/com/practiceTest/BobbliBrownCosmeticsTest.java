@@ -11,6 +11,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BobbliBrownCosmeticsTest {
+	int a=2;
+	int b= 2;
+	{
+		System.out.println(a+b);
+	}
 public static void main(String[] args) throws InterruptedException {
 	WebDriverManager.chromedriver().setup();
 	WebDriver driver=new ChromeDriver();

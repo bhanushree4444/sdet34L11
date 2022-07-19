@@ -21,7 +21,7 @@ driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 driver.get("https://www.makemytrip.com/");
 Thread.sleep(3000);
 driver.findElement(By.xpath("//span[@class='langCardClose']")).click();
-driver.findElement(By.xpath("//li[@data-cy='roundTrip']")).click();
+//driver.findElement(By.xpath("//li[@data-cy='roundTrip']")).click();
 
 
 //ExcelData excelData=new ExcelData();
@@ -39,15 +39,15 @@ Thread.sleep(4000);
 driver.findElement(By.xpath("//div[.='DEL']")).click();
 Thread.sleep(4000);
 
-driver.findElement(By.xpath("//input[@data-cy=\"departure\"]")).click();
+driver.findElement(By.xpath("//span[.='DEPARTURE']")).click();
 Thread.sleep(3000);
-driver.findElement(By.xpath("//div[@class=\"dateFiled active\"]")).sendKeys("25/07/2022");
+driver.findElement(By.xpath("//div[@aria-label='Sat Jul 30 2022']")).click();
 
 driver.findElement(By.xpath("//span[@class='lbl_input latoBold appendBottom10' and contains(.,'RETURN')]")).click();
 Thread.sleep(3000);
-driver.findElement(By.xpath("//div[@class=\"dateFiled active\"]")).sendKeys("31/07/2022");
+driver.findElement(By.xpath("//div[@aria-label='Tue Aug 16 2022']")).click();
 
-driver.findElement(By.xpath("//a[@class=\"primaryBtn font24 latoBold widgetSearchBtn \"]")).click();
+driver.findElement(By.xpath("//a[@class='primaryBtn font24 latoBold widgetSearchBtn ']")).click();
 driver.close();
 	}
 

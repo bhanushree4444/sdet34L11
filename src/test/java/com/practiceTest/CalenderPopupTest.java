@@ -20,28 +20,23 @@ public class CalenderPopupTest {
 		driver.get("http://seleniumpractise.blogspot.com/2016/08/how-to-handle-calendar-in-selenium.html");
 		Thread.sleep(5000);
 		int reqDate = 25;
-		String reqYear = "2020";
+		String reqYear = "2024";
 		String reqMonth = "January"; // MMMM = January, MM=01, MMM=Jan 
-		int reqMothOfYear = DateTimeFormatter.ofPattern("MMMM").
-				withLocale(Locale.ENGLISH)
-				.parse(reqMonth)
-				.get(ChronoField.MONTH_OF_YEAR);
+		int reqMothOfYear = DateTimeFormatter.ofPattern("MMMM").withLocale(Locale.ENGLISH).parse(reqMonth).get(ChronoField.MONTH_OF_YEAR);
 		 int reqYearInNumber = Integer.parseInt(reqYear);
 		driver.findElement(By.xpath("//input[@id='datepicker']")).click();
+		Thread.sleep(3000);
 		String[] currenMonthWithYear = driver.findElement(By.xpath("//div[@class='ui-datepicker-title']")).getText().split(" ");
 		String currentMonth = currenMonthWithYear[0];
-		int currentMothOfYear = DateTimeFormatter.ofPattern("MMMM").
-				withLocale(Locale.ENGLISH)
+		int currentMothOfYear = DateTimeFormatter.ofPattern("MMMM").withLocale(Locale.ENGLISH)
 				.parse(currentMonth)
 				.get(ChronoField.MONTH_OF_YEAR);
 		String currentYear=currenMonthWithYear[1] ;
 		int currentYearInNumber = Integer.parseInt(currentYear);
-		while(reqYearInNumber < currentYearInNumber || reqMothOfYear<currentMothOfYear) {
+		while(reqYearInNumber >= currentYearInNumber || reqMothOfYear >= currentMothOfYear) {
 			 currenMonthWithYear = driver.findElement(By.xpath("//div[@class='ui-datepicker-title']")).getText().split(" ");
 			 currentMonth = currenMonthWithYear[0];
-			 currentMothOfYear = DateTimeFormatter.ofPattern("MMMM").
-						withLocale(Locale.ENGLISH)
-						.parse(currentMonth)
+			 currentMothOfYear = DateTimeFormatter.ofPattern("MMMM").withLocale(Locale.ENGLISH).parse(currentMonth)
 						.get(ChronoField.MONTH_OF_YEAR);
 			  currentYear=currenMonthWithYear[1] ;
 			currentYearInNumber = Integer.parseInt(currentYear);

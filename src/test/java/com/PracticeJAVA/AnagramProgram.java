@@ -25,7 +25,5 @@ public class AnagramProgram {
 	{
 	System.out.println("not-anagram");
 	}
-
-	}
-
+  }
 }
